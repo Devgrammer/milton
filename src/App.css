@@ -1,0 +1,10 @@
+#root {
+  max-width: 100%;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.pause-animations-on-children-on-hover:hover * {
+  animation-play-state: paused;
+}
