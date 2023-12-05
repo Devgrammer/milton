@@ -9,7 +9,7 @@ import MFeat6 from "../../assets/img/ft6.png";
 const MoreFeatureCard = ({ img, miniHeading, headingColor, desc }) => {
   const moreFeatImgData = [MFeat1, MFeat2, MFeat3, MFeat4, MFeat5, MFeat6];
   return (
-    <div className="more-feature-card-main-container w-[387px] flex flex-col gap-y-6">
+    <div className="more-feature-card-main-container w-full smx:w-[387px] flex flex-col gap-y-6">
       <div className="card-img-container  h-[265px] bg-milton-blue rounded-2xl flex items-center ">
         <img
           src={moreFeatImgData[img]}
