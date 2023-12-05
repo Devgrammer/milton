@@ -15,7 +15,7 @@ const MiniSecHeading = ({ heading, color, position , icon}) => {
 
   return (
     <div
-      className={`mini-heading box-border py-2 px-4  flex  gap-x-2 rounded-full text-milton-black font-bold ${
+      className={`mini-heading box-border py-2 px-4  flex text-xs smx:text-md  gap-x-2 rounded-full text-milton-black font-bold ${
         color ? colorGenerator(color) : "bg-milton-blue"
       } w-fit ${position ? "" : "mx-auto"}`}
     >

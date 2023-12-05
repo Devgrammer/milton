@@ -28,11 +28,11 @@ const PricingSection = () => {
           Annually
         </div>
       </div>
-      <div className="subcription-text flex absolute right-[27%] text-milton-black font-semibold">
+      <div className="subcription-text flex absolute top-14 right-6 smx:right-[24%] smx:top-0 text-milton-black font-semibold">
         <BsStars size={24} color={"#FDE136"} />
         save 30%
       </div>
-      <div className="price-card-contianer grid grid-flow-row grid-cols-3 gap-10">
+      <div className="price-card-contianer grid grid-flow-row  grid-cols-1 smx:grid-cols-3 gap-10">
         <PriceCard
           amt={0}
           subscription={subscription}

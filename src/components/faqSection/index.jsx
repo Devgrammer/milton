@@ -51,7 +51,7 @@ const FaqSection = () => {
       setFaq(updatedArray);
     };
   return (
-    <div className="faq-section-main-container flex flex-col gap-y-8 w-[75%] mx-auto">
+    <div className="faq-section-main-container flex flex-col gap-y-8 w-full smx:w-[75%] mx-auto">
         {
            faq && faq?.map((fa, index)=>{
                 return <FaqQuestion key={`faq-${index}`} id={fa.id} ans={fa.ans} que={fa.que} isActive={fa.isActive} handleToggle={handleToggle}/>
