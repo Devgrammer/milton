@@ -34,7 +34,7 @@ const FeatureCard = (props) => {
   return (
     <div className="feature-card-main-container flex flex-col text-left justify-start mt-20">
       <div
-        className={`feature-card-wrapper flex flex-col ${
+        className={`feature-card-wrapper flex flex-col smx:flex-row ${
           remainder === 0 ? " " : "flex-row-reverse"
         } justify-between items-start `}
       >

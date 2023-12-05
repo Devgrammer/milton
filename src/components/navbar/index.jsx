@@ -35,7 +35,11 @@ const NavBar = () => {
   const [navToggle, setNavToggle] = useState(false);
   return (
     <>
-      <div className="nav-bar-main-container w-full h-20  flex justify-center bg-milton-light items-center border-b text-md fixed z-40 top-0 py-5 px-[24px] smx:px-[60px]">
+      <div
+        className={`nav-bar-main-container w-full h-20  flex justify-center bg-milton-light items-center ${
+          !navToggle ? "border-0" : "border-0"
+        }  text-md fixed z-40 top-0 py-5 px-[24px] smx:px-[60px]`}
+      >
         <div className="nav-wrapper flex justify-between items-center w-[1200px]">
           <div className="nav-brand flex items-center gap-x-2">
             <div className="nav-brand-logo p-[4px] bg-milton-blue rounded-sm">
@@ -66,12 +70,12 @@ const NavBar = () => {
               Get started
             </button>
           </div>
-          <div className="hamburger-container">
+          <div className="hamburger-container block smx:hidden">
             <button
               className="hamburger text-milton-black"
               onClick={() => setNavToggle(!navToggle)}
             >
-              {navToggle ? (
+              {!navToggle ? (
                 <RxHamburgerMenu size={32} />
               ) : (
                 <RxCross2 size={32} />
@@ -80,8 +84,8 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {!navToggle && (
-        <div className="nav-mobile-menu w-screen h-max fixed top-20 bg-milton-light text-center p-8 box-border flex flex-col gap-y-6 z-[80]">
+      {navToggle && (
+        <div className="nav-mobile-menu w-screen h-max fixed top-20 bg-milton-light text-center p-8 box-border flex smx:hidden flex-col gap-y-6 z-[80] border border-b-slate-200">
           <div className="nav-menu-list  flex flex-col gap-y-6 justify-center text-milton-gray  ">
             {navLink.map((nav, index) => {
               const { id, path, linkName } = nav;
