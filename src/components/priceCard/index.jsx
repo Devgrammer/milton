@@ -22,10 +22,10 @@ const PriceCard = ({type, amt, desc, planBenefit, subscription, isDeal}) => {
     }
   }
   return (
-    <div className="price-card-main-container relative rounded-2xl  min-h-[625px] text-md shadow-xl p-8 gap-y-4 mx-auto">
+    <div className="price-card-main-container relative rounded-2xl  w-full smx:w-auto  shrink-0 min-h-[625px] text-md shadow-xl p-8 gap-y-4 mx-auto">
       <div className="price-card-upper flex flex-col gap-y-7">
         <MiniSecHeading heading={"Free"} color={"voilet-lite"} position={'left'} />
-        <div className="card-desc text-milton-gray whitespace-nowrap">
+        <div className="card-desc text-milton-gray whitespace-normal smx:whitespace-nowrap">
           So you can see how our incredible our tool is.
         </div>
         <div className="price-card-amt-contianer ">
@@ -39,7 +39,7 @@ const PriceCard = ({type, amt, desc, planBenefit, subscription, isDeal}) => {
             {planBenefit}
           </div>
           <div className="pricing-get-started text-center">
-            <button className="price-get-started bg-milton-black min-w-[320px] text-white h-12 py-4 px-7 rounded-xl flex justify-center items-center font-bold">
+            <button className="price-get-started bg-milton-black w-full mt-6 smx:min-w-[320px] text-white h-12 py-4 px-7 rounded-xl flex justify-center items-center font-bold">
               Get started
             </button>
             <span className="price-get-started-text text-sm text-black ">

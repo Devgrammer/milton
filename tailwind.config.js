@@ -23,6 +23,12 @@ export default {
         'milton-gray-dark': '#333333',
         'milton-gray-btn': '#CBCBD1',
       },
+      screens: {
+        'smx': '900px',
+     
+
+        
+      },
       fontFamily:{
         'inter': ['"Inter"', ...defaultTheme.fontFamily.sans],
       },

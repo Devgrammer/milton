@@ -14,11 +14,11 @@ const HeroSection = () => {
   return (
     <div className="hero-section-main-contianer " id="hero">
       <MiniSecHeading heading={"An other way to manage to time."} />
-      <div className="hero-wrapper w-[75%] flex flex-col gap-y-8 px-10 pb-40 text-center box-border mx-auto">
-        <div className="hero-lead-text text-[80px] font-extrabold  shrink-0 w-fit transform-none decoration-none leading-[1.2em]  ">
+      <div className="hero-wrapper w-full smx:w-[75%] flex flex-col gap-y-8 smx:px-10 pb-40 text-center box-border mx-auto">
+        <div className="hero-lead-text text-[40px] smx:text-[80px] font-extrabold  shrink-0 w-fit transform-none decoration-none leading-[1.2em]  ">
           Your new favourite calendar app
         </div>
-        <div className="hero-sub-text font-semibold text-xl text-milton-gray w-[70%] mx-auto">
+        <div className="hero-sub-text font-semibold text-md smx:text-xl text-milton-gray smx:w-[70%] mx-auto">
           Here you should explain how cool your app is. Remember, focus on the
           benefits for your users, not on the features.{" "}
         </div>

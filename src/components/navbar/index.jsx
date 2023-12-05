@@ -33,12 +33,14 @@ const NavBar = () => {
     <div className="nav-bar-main-container w-full h-20 flex justify-center bg-milton-light items-center border-b text-md fixed z-40 top-0 py-5 px-[60px]">
       <div className="nav-wrapper flex justify-between items-center w-[1200px]">
         <div className="nav-brand flex items-center gap-x-2">
-          <div className="nav-brand-logo p-[4px] bg-milton-blue rounded-sm"><TbTriangleFilled color={'black'} size={14}/></div>
+          <div className="nav-brand-logo p-[4px] bg-milton-blue rounded-sm">
+            <TbTriangleFilled color={"black"} size={14} />
+          </div>
           <div className="nav-brand-name text-milton-black  font-bold ">
             Milton
           </div>
         </div>
-        <div className="nav-menu-list text-milton-gray flex gap-x-10">
+        <div className="nav-menu-list  hidden smx:flex text-milton-gray  gap-x-10">
           {navLink.map((nav, index) => {
             const { id, path, linkName } = nav;
             return (
@@ -51,7 +53,7 @@ const NavBar = () => {
             );
           })}
         </div>
-        <div className="nav-login-console font-bold flex gap-x-2 items-center">
+        <div className="nav-login-console font-bold hidden smx:flex gap-x-2 items-center">
           <button className="login-btn bg-milton-blue py-2 px-4 rounded-xl text-milton-black">
             Login
           </button>

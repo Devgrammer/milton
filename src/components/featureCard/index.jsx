@@ -34,22 +34,22 @@ const FeatureCard = (props) => {
   return (
     <div className="feature-card-main-container flex flex-col text-left justify-start mt-20">
       <div
-        className={`feature-card-wrapper flex ${
+        className={`feature-card-wrapper flex flex-col ${
           remainder === 0 ? " " : "flex-row-reverse"
         } justify-between items-start `}
       >
         <div
-          className={`feature-card-content  flex flex-col  justify-start w-1/2`}
+          className={`feature-card-content  flex flex-col  justify-start w-full smx:w-1/2`}
         >
           <MiniSecHeading
             heading={miniHeading}
             color={headingColor}
             position={"left"}
           />
-          <div className="feature-card-heading font-bold text-[40px] text-milton-black leading-[1.2em] mt-4 ">
+          <div className="feature-card-heading font-bold text-[28px] smx:text-[40px] text-milton-black leading-[1.2em] mt-4 ">
             {subHeading}
           </div>
-          <div className="feature-card-description font-inter text-xl text-milton-gray w-[80%] my-12 leading-[1.6em] ">
+          <div className="feature-card-description font-inter text-xl text-milton-gray w-full smx:w-[80%] my-12 leading-[1.6em] ">
             {desc}
           </div>
           {popup && (
@@ -61,7 +61,7 @@ const FeatureCard = (props) => {
             />
           )}
         </div>
-        <div className={`feature-img-container flex items-start  w-1/2 h-100 `}>
+        <div className={`feature-img-container flex items-start  w-full smx:w-1/2 h-100 `}>
           <img
             src={featureImgData[img]}
             width={"100%"}
