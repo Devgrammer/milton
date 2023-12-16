@@ -1,5 +1,5 @@
 
-import { TestimonialData } from '../../data/tesimonial';
+import { TestimonialData } from '../../data/testimonial';
 import TestimonialCard from '../testimonialCard';
 
 const TestimonialSection = () => {
