@@ -9,7 +9,7 @@ const FaqQuestion = ({ id, ans, que, isActive, handleToggle }) => {
     >
       <div className="question-wrapper w-full flex justify-between items-center">
         <div className="faq-question-text text-xl font-[700]">
-          Can I cancel my subscription?
+         {que}
         </div>
         <div className="faq-question-toggle w-fit">
           <span
